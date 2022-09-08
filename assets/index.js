@@ -7,7 +7,7 @@ export {default as MidRight} from "./BackgroundShapes/MidRight.svg";
 
 // ------  Header Bar  -------
 
-export { default as Logo } from "./generalIcons/Logo.svg";
+export { default as Logo } from "./generalIcons/Logo.png";
 export { default as Github } from "./generalIcons/socialIcons/github.svg";
 export { default as Linkdin } from "./generalIcons/socialIcons/linkdin.svg";
 export { default as Facebook } from "./generalIcons/socialIcons/facebook.svg";
@@ -22,7 +22,6 @@ export { default as Toggle } from "./generalIcons/Toggle.svg";
 // ------  Home Page  -------
 
 export { default as homeSrcolldownButton } from "./Home/Icons/homeSrcolldownButton.svg";
-export { default as DaudImg } from "./Home/Images/DaudAhmed.png";
 export { default as ReviewImage1 } from "./Home/Images/review_image1.svg";
 export { default as ReviewImage2 } from "./Home/Images/review_image2.svg";
 export { default as ReviewImage3 } from "./Home/Images/review_image3.svg";
@@ -38,11 +37,8 @@ export { default as PreIcon } from "./Home/Icons/preIcon.svg";
 export { default as NextIcon } from "./Home/Icons/nexticon.svg";
 
 // ------  About Page  -------
-
-export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
 export { default as AboutBackImg } from "./About/AboutBackImg.svg";
 export { default as VideoPlayBtn } from "./About/icons/PlayButton.svg";
-export { default as AboutDaud } from "./About/Daud.png";
 export { default as xd } from "./About/icons/skills icons/xd.svg";
 export { default as adobephotoshop } from "./About/icons/skills icons/adobephotoshop.svg";
 export { default as bootstrap } from "./About/icons/skills icons/bootstrap.svg";
@@ -63,7 +59,6 @@ export { default as nodejs } from "./About/icons/skills icons/nodejs.png";
 
 // ------  Services Page  -------
 
-export { default as SelfServicesImage } from "./Services/SelfServicesImage.png";
 export { default as WorkMehtodArrow } from "./Services/Icons/workMehtodArrow.svg";
 export { default as FreelancingImage } from "./Services/freelancing.png";
 
@@ -84,7 +79,6 @@ export { default as project7 } from "./Portfolio/project7.png";
 // ------  Contact Page  -------
 
 export { default as ContactRightArrow } from "./Contact/icons/contactrightArrow.svg";
-export { default as SelfHireImage } from "./Contact/images/SelfHireImage.png";
 export { default as Upworklogo } from "./Contact/images/UpworkLogo.png";
 export { default as FaqsDesktopView } from "./Contact/images/Desktop.svg";
 export { default as FaqsMobileView } from "./Contact/images/Mobile_View.svg";

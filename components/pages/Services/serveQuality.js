@@ -1,16 +1,8 @@
 import {
-  reactJs,
-  gatsbyjs,
-  next,
   portfolioDownArrow,
-  SelfServicesImage,
-} from "../../../assets/";
+} from "../../../assets";
 import animationData from "../../../assets/LottieFiles/Servicespage.json";
 import Animation from "../../common/animation";
-import {
-  MouseParallaxChild,
-  MouseParallaxContainer,
-} from "react-parallax-mouse";
 
 const ServeQuality = () => {
   return (
@@ -30,46 +22,6 @@ const ServeQuality = () => {
               <Animation src={animationData} />
             </div>
           </div>
-          {/* <MouseParallaxContainer
-            className="parallax"
-            containerStyles={{
-              width: "100%",
-              overflow: "visible",
-              gridTemplateColumns: "auto auto auto auto auto",
-            }}
-            resetOnLeave
-          >
-            <MouseParallaxChild
-              factorX={0.06}
-              factorY={0.06}
-              updateStyles={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-              }}
-            >
-              <img
-                src={SelfServicesImage.src}
-                alt="img"
-                className="self-services-image"
-              />
-              <div className="serve-quality-icons-parent">
-                <img src={next.src} alt="" className="s-skill-icon s-next-icon" />
-                <img
-                  src={reactJs.src}
-                  alt=""
-                  className="s-skill-icon s-react-icon"
-                />
-                <img
-                  src={gatsbyjs.src}
-                  alt=""
-                  className="s-skill-icon s-gatsby-icon"
-                />
-              </div>
-            </MouseParallaxChild>
-          </MouseParallaxContainer> */}
         </div>
 
         <div className="serve-quality-part-parent ">

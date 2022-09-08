@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  MouseParallaxChild,
-  MouseParallaxContainer,
-} from "react-parallax-mouse";
-import { AboutBackImg, AboutDaud, AboutImageShadow } from "../../../assets";
+import { AboutBackImg} from "../../../assets";
 import animationData from "../../../assets/LottieFiles/Aboutpage.json";
 import Animation from "../../common/animation";
 
@@ -16,37 +12,6 @@ const AboutMeSection = () => {
           alt="img"
           className="position-absolute aboutme-background-text mx-auto"
         />
-        {/* <MouseParallaxContainer
-          className="parallax"
-          containerStyles={{
-            width: "100%",
-            overflow: "visible",
-            gridTemplateColumns: "auto auto auto auto auto",
-          }}
-          resetOnLeave
-        >
-          <MouseParallaxChild
-            factorX={0.06}
-            factorY={0.06}
-            updateStyles={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "auto",
-              height: "100%",
-            }}
-          >
-            <div className="about-left-img-part">
-              <img src={AboutDaud.src} alt="" className="about-self-img" />
-              <img
-                src={AboutImageShadow.src}
-                alt=""
-                className="about-shadow-image ml-5"
-              />
-            </div>
-          </MouseParallaxChild>
-        </MouseParallaxContainer> */}
-
         <div
           style={{
             display: "flex",

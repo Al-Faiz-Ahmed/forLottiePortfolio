@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { DaudImg, homeSrcolldownButton } from "../../../assets";
+import { homeSrcolldownButton } from "../../../assets";
 import animationData from "../../../assets/LottieFiles/Homepage.json"
 import Link from "next/link";
-import {
-  MouseParallaxChild,
-  MouseParallaxContainer,
-} from "react-parallax-mouse";
 import Animation from "../../common/animation";
 
 const HeroSection = () => {

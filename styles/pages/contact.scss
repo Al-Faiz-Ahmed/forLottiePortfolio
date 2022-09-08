@@ -211,6 +211,9 @@ z-index: 1;
 
 }
 
+.form-floating{
+  margin-top: 2.5rem;
+}
 .floatinglbl {
   color: $general-normalSize-text-color;
 
@@ -313,6 +316,14 @@ z-index: 1;
 
 
 }
+.form-floating > .form-control:focus {
+  padding-top: 2.625rem;
+  padding-bottom: 1.625rem;
+}
+.form-floating > .form-control {
+  padding-top: 2rem !important;
+  padding-bottom: 1.625rem !important;
+}
 .form-floating>label {
 padding-top:0!important;
 padding-left:0!important;
@@ -388,7 +399,7 @@ padding-left:0!important;
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
-  transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem);
+  transform: scale(0.85) translateY(-2.2rem) translateX(0.15rem);
 
   @include desktop() {
   }
@@ -420,12 +431,20 @@ padding-left:0!important;
 
 
 }
+.form-floating > .detail-input:focus ~ label,
+.form-floating > .detail-input:not(:placeholder-shown) ~ label{
+  transform: scale(0.85) translateY(-.6rem) translateX(0.15rem);
+}
 
 .detail-input {
   // border: 1px solid #dee2e6 !important;
   min-height: 140px !important;
   max-height: 200px !important;
+  padding-top: 20px !important;
 
+  ~label{
+    padding-top: 5px !important;
+  }
   @include desktop() {
   }
 

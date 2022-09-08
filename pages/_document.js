@@ -13,7 +13,7 @@ export default function Document() {
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
           crossOrigin="anonymous"
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <body>
         <Main />
