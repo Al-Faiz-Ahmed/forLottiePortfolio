@@ -485,7 +485,7 @@ body div .services-card {
 
 
   @include mobile() {
-    width: 70%;
+    width: 90%;
   }
 
 }
@@ -494,10 +494,6 @@ body div .services-card {
   @include flexRow(space-between, center);
   background-color: $theme-green-color;
   padding-right: 0;
-
-  @include laptop() {
-    height: 500px;
-  }
 
   @include tablet() {
     margin-left: -50px;
@@ -548,16 +544,17 @@ body div .services-card {
 
 .freelancing-img {
   width: 100%;
-  height: 418px;
-
+  height: 480px;
   img {
     object-fit: contain;
+    object-position: right;
   }
 
+  @include desktop() {
+    height: 400px;
 
+  }
   @include tablet() {
-    //
-
     img {
       object-fit: cover;
       object-position: bottom;
