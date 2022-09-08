@@ -186,58 +186,17 @@
   );
   padding-right: 30px;
 }
+.homepage-right-animation-part{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 500px;
+  @include tablet() {
+    height: 100% !important;
 
-// .right-img-part {
-//   @include desktopThridBpMixin() {
-//     position: relative;
-//     // right: 130px;
-//   }
-
-//   // @include elementSize(880px, 600px);
-//   // margin-right: -55px;
-
-//   @include FlexCenterRow();
-
-//   @include desktop() {
-//     // @include elementSize(780px, 530px);
-
-//     position: relative;
-//     // right: 75px;
-//   }
-
-//   @include laptop() {
-//     // @include elementSize(710px, 480px);
-
-//     padding-right: 40px;
-//     // right: 145px;
-//   }
-
-//   @include tablet() {
-//     // min-width: 850px;
-//     // height: 610px;
-//     // right: 0;
-//     // padding-right: 0px;
-//   }
-
-//   @include largeWidthSizeMobiles() {
-//     // min-width: 700px;
-//     // height: 495px;
-//   }
-
-//   @include mobile() {
-//     // min-width: 600px;
-//     // height: 430px;
-//   }
-// }
-
-@include mobile() {
-  div .parallax {
-    overflow-x: hidden !important;
   }
-}
 
-.dev-img {
-  animation: MoveElementbyMargin 1.4s 1 ease-in-out;
 }
 
 .scroll-down-element {

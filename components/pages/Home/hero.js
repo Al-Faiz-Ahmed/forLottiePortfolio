@@ -27,7 +27,7 @@ const HeroSection = () => {
           <div className="left-content-part ">
             <span className={`welcome-txt ${hideWelcome}`}>Welcome</span>
             <h1 className="dev-name">
-              <span className="heading-first">I'm Dawood Ahmed,</span>
+              <span className="heading-first">I&apos;m Dawood Ahmed,</span>
               <br />
               <span className="heading-second position-relative hero-text-parent">
                 A&nbsp;
@@ -52,39 +52,8 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          {/* <MouseParallaxContainer
-            className="parallax"
-            containerStyles={{
-              width: "100%",
-              overflow: "visible",
-              gridTemplateColumns: "auto auto auto auto auto",
-            }}
-            resetOnLeave
-          >
-            <MouseParallaxChild
-              factorX={0.06}
-              factorY={0.06}
-              updateStyles={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-              }}
-            >
-              <div className="right-img-part img-background">
-                <img src={DaudImg.src} alt="img" className="dev-img w-100 h-100" />
-              </div>
-            </MouseParallaxChild>
-          </MouseParallaxContainer> */}
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "auto",
-              height: "100%",
-            }}
+          className="homepage-right-animation-part"
           >
             <div className="img-background">
               <Animation src={animationData}/>

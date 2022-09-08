@@ -5,10 +5,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Dawood Ahmed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
       </Head>
-        <ThemeFirstLayer />
+      <ThemeFirstLayer />
       <div className="pages-parent mx-auto bg-transparent">
         <Header />
         <Component {...pageProps} />
