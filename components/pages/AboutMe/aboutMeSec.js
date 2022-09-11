@@ -1,7 +1,11 @@
 import React from "react";
-import { AboutBackImg} from "../../../assets";
+import { AboutBackImg } from "../../../assets";
 import animationData from "../../../assets/LottieFiles/Aboutpage.json";
 import Animation from "../../common/animation";
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
 
 const AboutMeSection = () => {
   return (
@@ -19,12 +23,34 @@ const AboutMeSection = () => {
             justifyContent: "center",
             width: "auto",
             height: "100%",
-            flex:"1",
+            flex: "1",
           }}
         >
-          <div className="about-left-img-part"> 
-            <Animation src={animationData} />
-          </div>
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyles={{
+              width: "100%",
+              overflow: "visible",
+              gridTemplateColumns: "auto auto auto auto auto",
+            }}
+            resetOnLeave
+          >
+            <MouseParallaxChild
+              factorX={0.06}
+              factorY={0.06}
+              updateStyles={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "auto",
+                height: "100%",
+              }}
+            >
+              <div className="about-left-img-part">
+                <Animation src={animationData} />
+              </div>
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
         </div>
         <div className="about-right-part px-sm-4 px-md-5">
           <h1 className="about-heading">

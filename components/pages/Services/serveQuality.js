@@ -1,17 +1,28 @@
-import {
-  portfolioDownArrow,
-} from "../../../assets";
+import { portfolioDownArrow } from "../../../assets";
 import animationData from "../../../assets/LottieFiles/Servicespage.json";
 import Animation from "../../common/animation";
-
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
 const ServeQuality = () => {
   return (
     <>
       <section className="serve-qulaity-section">
         <div className="serve-quality-left-part mb-5">
-          <div>
-            <div
-              style={{
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyles={{
+              width: "100%",
+              overflow: "visible",
+              gridTemplateColumns: "auto auto auto auto auto",
+            }}
+            resetOnLeave
+          >
+            <MouseParallaxChild
+              factorX={0.06}
+              factorY={0.06}
+              updateStyles={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -19,9 +30,21 @@ const ServeQuality = () => {
                 height: "100%",
               }}
             >
-              <Animation src={animationData} />
-            </div>
-          </div>
+              <div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "auto",
+                    height: "100%",
+                  }}
+                >
+                  <Animation src={animationData} />
+                </div>
+              </div>
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
         </div>
 
         <div className="serve-quality-part-parent ">

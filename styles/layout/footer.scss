@@ -1,0 +1,120 @@
+.footer {
+  margin: 0 auto;
+  border-top: 2px solid #373737cc;
+  background-color: $theme-seconds-background-color;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0px -13px 130px 0px #6264b1;
+  padding-bottom: 40px;
+  @include desktop() {
+  }
+
+  @include laptop() {
+    box-shadow: 0px -13px 80px 0px #6264b1;
+  }
+
+  @include tablet() {
+    border-radius: 0 !important;
+    box-shadow: 0px -10px 50px 0px #6264b1;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    box-shadow: 0px -10px 50px 0px #6264b1;
+  }
+  @include customSmallBp() {
+  }
+}
+
+.logoFooter {
+  width: 200px;
+  @include customSmallBp() {
+    width: 50vw;
+  }
+}
+p.detail {
+  width: 90%;
+  @include customSmallBp() {
+    width: 100%;
+  }
+}
+.detail,
+.links {
+  font-size: 16px;
+}
+a.links {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline $second-text-color;
+  }
+}
+.linksHeading {
+  color: $second-text-color !important;
+  font-size: 21px;
+  margin-bottom: 30px;
+  @include laptop() {
+    margin-bottom: 21px;
+  }
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1.7px solid #ffffff;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  @include customSmallBp() {
+    min-width: 20px;
+    width: 16vw;
+    max-width: 50px;
+
+    max-height: 50px;
+    height: 16vw;
+    min-height: 20px;
+  }
+}
+.github:hover {
+  background-color: #1b1f23;
+  box-shadow: 0px 0px 40px 30px #1b1f23;
+}
+.facebook:hover {
+  background-color: #1b74e4;
+  box-shadow: 0px 0px 70px 8px #1b74e4;
+}
+.linkedin:hover {
+  background-color: #0077b5;
+  box-shadow: 0px 0px 70px 8px #0077b5;
+}
+.whatsapp:hover {
+  background-color: #35d84b;
+  box-shadow: 0px 0px 70px 8px #35d84b;
+}
+
+.contactus-icons{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 5px;
+    width: 35px;
+  }
+}
+.pointer{
+  align-items: flex-start;
+}
+
+.websiteDetail{
+  h2{
+    font-size: 40px;
+    span{
+      color: $second-text-color;
+    }
+  }
+}

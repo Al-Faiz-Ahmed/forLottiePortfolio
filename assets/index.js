@@ -82,3 +82,14 @@ export { default as ContactRightArrow } from "./Contact/icons/contactrightArrow.
 export { default as Upworklogo } from "./Contact/images/UpworkLogo.png";
 export { default as FaqsDesktopView } from "./Contact/images/Desktop.svg";
 export { default as FaqsMobileView } from "./Contact/images/Mobile_View.svg";
+
+
+
+
+
+// footer Icons 
+
+export { default as PoniterIcon } from "./generalIcons/footer/pointerIcon.svg";
+export { default as PhoneIcon } from "./generalIcons/footer/phoneIcon.svg";
+export { default as EmailIcon } from "./generalIcons/footer/mailIcon.svg";
+export { default as GlobeIcon } from "./generalIcons/footer/globeIcon.svg";

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { homeSrcolldownButton } from "../../../assets";
-import animationData from "../../../assets/LottieFiles/Homepage.json"
+import animationData from "../../../assets/LottieFiles/Homepage.json";
 import Link from "next/link";
 import Animation from "../../common/animation";
-
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
 const HeroSection = () => {
   const [hideWelcome, setHideWelcome] = useState("");
 
@@ -48,13 +51,33 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div
-          className="homepage-right-animation-part"
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyles={{
+              width: "100%",
+              overflow: "visible",
+              gridTemplateColumns: "auto auto auto auto auto",
+            }}
+            resetOnLeave
           >
-            <div className="img-background">
-              <Animation src={animationData}/>
-            </div>
-          </div>
+            <MouseParallaxChild
+              factorX={0.06}
+              factorY={0.06}
+              updateStyles={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "auto",
+                height: "100%",
+              }}
+            >
+              <div className="homepage-right-animation-part">
+                <div className="img-background">
+                  <Animation src={animationData} />
+                </div>
+              </div>
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
         </div>
         <div className="scroll-down-element">
           <span className="hero-scroll-first-line">

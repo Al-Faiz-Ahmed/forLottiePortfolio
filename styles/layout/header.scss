@@ -27,12 +27,15 @@
       
       
   }
+  // @include customSmallBp() {
+      
+  //     width:190px;
+      
+      
+  // }
   @include customSmallBp() {
-      
-      width:190px;
-      
-      
-  }
+    width:45vw;
+}
 }
 .toggle-img{
     
@@ -57,8 +60,7 @@
       
       
   }
-  @include customSmallBp() {
-      
+    @include customSmallBp() {
       
   }
     
